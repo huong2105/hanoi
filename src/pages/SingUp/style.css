@@ -1,0 +1,18 @@
+.SingUp {
+    display: flex;
+    height: 500px;
+    padding: 0 300px;
+    margin: 50px 0px;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    background: brown;
+}
+
+.right {
+    width: 60%;
+    height: 100%;
+    background: burlywood;
+}

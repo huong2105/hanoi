@@ -1,0 +1,12 @@
+.news-detail-top{
+    display: flex;
+    padding: 0 135px;
+}
+.news-detail-top-left{
+width: 50%;
+background: coral;
+}
+.news-detail-top-right{
+width: 50%;
+background: crimson;
+}
