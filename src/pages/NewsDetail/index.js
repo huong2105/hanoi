@@ -7,7 +7,6 @@ import "./style.css"
 function PageNewsDtail() {
 
     const {wpdata} = useSelector(state => state.ListReducer)
-    console.log("wpdata", wpdata);
     const disptach = useDispatch()
     useEffect(()=>{
         disptach(wpGetListProduct())
