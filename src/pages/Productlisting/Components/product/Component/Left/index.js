@@ -31,9 +31,11 @@ function Left() {
                 <p>Categories</p>
                 <div>
                     {Categories.map((item, index) => (
+
                         <div className='title'
                             style={{ color: item.id === id ? "#2AA0F5" : "" }}
-                            onClick={() => setId(item.id)}>{item.title}</div>
+                            onClick={() => setId(item.id)}>{item.title}
+                        </div>
                     ))}
                 </div>
             </div>
