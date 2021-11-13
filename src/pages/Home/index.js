@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Home from './components';
 import './style.css';
 
 function Homepage() {
