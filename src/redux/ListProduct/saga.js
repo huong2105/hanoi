@@ -4,7 +4,7 @@ import axios from "axios"
 import {put , takeLatest} from "@redux-saga/core/effects";
 function * wpGetListProduct(){
     try {
-        const res = yield axios.get(`https://api-hanoi.000webhostapp.com/wp-json/wp/v2/posts?categories=1`)
+        const res = yield axios.get(`https://api-hanoi.000webhostapp.com/wp-json/wp/v2/posts?`)
         console.log("res", res);
         if (res){
             yield put (actions.wpGetListProductSuccess(res.data))

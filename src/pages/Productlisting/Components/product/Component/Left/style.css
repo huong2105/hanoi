@@ -1,0 +1,22 @@
+.product-left{
+    border: 1px solid #e5e5e5;
+    width: 270px;
+    border-radius: 5px ;
+}
+
+.categori{
+    padding: 30px 0px 0px 30px;
+}
+
+.categori p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5C5C5C;
+    margin-bottom: 10px;
+}

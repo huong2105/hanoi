@@ -83,4 +83,16 @@
     background: #e0e0e0;
 }
 
+/* @media(max-width: ...) - mình sẽ thay đổi kích thước nếu màn hình đang ở kích thước khác
+vd như màn hình của điện thoại...
+Trang đang ký là c lấy code 
+*/
+@media (max-width: 1367px){
+
+    .SingUp{
+
+        margin: 0 160px;
+    }
+}
+
 

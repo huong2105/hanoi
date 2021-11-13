@@ -15,7 +15,7 @@ export const ListReducer = (state = initialState, action) => {
         loading: true,
       };
     case types.WP_GET_LIST_PRODUCT_SUCCESS:
-      console.log("action",action );
+    
       return {
         ...state,
         ...{ wpdata: action.payload, loading: false },
