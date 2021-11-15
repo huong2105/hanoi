@@ -3,4 +3,5 @@
 }
 .Wapper-product{
     display: flex;
+    gap: 30px;
 }
