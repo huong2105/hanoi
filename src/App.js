@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Switch>
           <Route path = "/danh-sach-dia-diem" component = {PageProducListing}></Route>
-          <Route path = "/tin-tuc/:slug" component = {PageNewsDtail}></Route>
+          <Route path = "/chi-tiet/:slug" component = {PageNewsDtail}></Route>
           <Route path = "/dang-ky" component = {PageSingup}></Route>
           <Route path="/quan-ly-he-thong" component={PageMana}></Route>
           <Route path="/" component={Home}></Route>

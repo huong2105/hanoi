@@ -24,6 +24,7 @@ function Left() {
             title: 'Arm & Tub'
         },
     ])
+    
     const [id, setId] = useState(1)
     return (
         <div className='product-left'>
