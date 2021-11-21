@@ -9,19 +9,19 @@ function Left() {
         },
         {
             id: 2,
-            title: 'Arm & Tub'
+            title: 'Thanh Xuân'
         },
         {
             id: 3,
-            title: 'Arm & Tub'
+            title: 'Cầu Giấy'
         },
         {
             id: 4,
-            title: 'Arm & Tub'
+            title: 'Tây Hồ'
         },
         {
             id: 5,
-            title: 'Arm & Tub'
+            title: 'Hoàn Kiếm'
         },
     ])
     
