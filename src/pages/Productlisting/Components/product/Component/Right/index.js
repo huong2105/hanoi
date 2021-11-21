@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {AiOutlineArrowRight} from "react-icons/ai"
+import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./style.css";
 function Right() {
@@ -76,7 +76,9 @@ function Right() {
                 </div>
             </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Right;
