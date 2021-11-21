@@ -12,15 +12,19 @@ import PageMana from './pages/Manager/components';
 import PageSingup from './pages/SingUp';
 import PageNewsDtail from './pages/NewsDetail';
 import PageProducListing from './pages/Productlisting';
+import Pagesignup from './pages/SignUp';
+import PageLogIn from './pages/LogIn';
 
 function App() {
   return (
     <div>
       <Router>
         <Switch>
+          <Route path = '/dang-nhap' component = {PageLogIn}/>
+          <Route path = '/dang-ky' component ={Pagesignup}></Route>
           <Route path = "/danh-sach-dia-diem" component = {PageProducListing}></Route>
           <Route path = "/chi-tiet/:slug" component = {PageNewsDtail}></Route>
-          <Route path = "/dang-ky" component = {PageSingup}></Route>
+          <Route path = "/phan-hoi" component = {PageSingup}></Route>
           <Route path="/quan-ly-he-thong" component={PageMana}></Route>
           <Route path="/" component={Home}></Route>
         </Switch>

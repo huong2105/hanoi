@@ -9,7 +9,7 @@ function Left() {
         },
         {
             id: 2,
-            title: 'Arm & Tub'
+            title: '    '
         },
         {
             id: 3,
