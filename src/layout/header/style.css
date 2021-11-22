@@ -16,3 +16,60 @@
     border: 1px solid #E5E5E5;
     background: #FFFFFF;
   }
+
+  a {
+
+    text-decoration: none !important;
+  }
+
+  .content-left{
+
+    
+  }
+
+  .content-left a{
+
+    color: #2d2d2d;
+  }
+
+  .content-left svg {
+
+    font-size: 24px;
+    color: #2d2d2d;
+  }
+
+  .infoheader {
+    padding: 20px 136px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .iconheader {
+    display: flex;
+    gap: 15px;
+  }
+
+  .iconheader svg {
+
+    font-size: 24px;
+    color: #2d2d2d;
+    cursor: pointer;
+  }
+
+  .iconheader input {
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+  }
+
+  .infoheader span {
+    text-transform: uppercase;
+    color: #2d2d2d;
+    cursor: pointer;
+  }
+
+  .content-right{
+
+    color: #FFFFFF;
+    gap: 10px
+  }

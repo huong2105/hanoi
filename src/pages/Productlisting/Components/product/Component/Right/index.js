@@ -76,8 +76,6 @@ function Right() {
                 </div>
             </div>
         </div>
-      </div>
-    </div>
   );
 }
 
