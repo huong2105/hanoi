@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import "./style.css"
+import { useSelector, useDispatch } from 'react-redux';
+import { getListProduct } from '../../../../../../redux/ListProduct/action';
 function Left() {
 
     const [Categories, setCategories] = useState([
         {
-            id: 1,
+            id: 4,
             title: 'All'
         },
         {
@@ -16,7 +18,7 @@ function Left() {
             title: 'Cầu Giấy'
         },
         {
-            id: 4,
+            id: 1,
             title: 'Tây Hồ'
         },
         {
@@ -25,7 +27,14 @@ function Left() {
         },
     ])
     
+    const dispatch = useDispatch()
     const [id, setId] = useState(1)
+    const onSubmit = (id) => {
+
+        setId(id)
+        dispatch(getListProduct(id))
+    
+    }
     return (
         <div className='product-left'>
             <div className='categori'>
@@ -35,7 +44,7 @@ function Left() {
 
                         <div className='title'
                             style={{ color: item.id === id ? "#2AA0F5" : "" }}
-                            onClick={() => setId(item.id)}>{item.title}
+                            onClick={() => onSubmit(item.id)}>{item.title}
                         </div>
                     ))}
                 </div>

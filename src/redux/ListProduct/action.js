@@ -1,7 +1,8 @@
 import * as types from "./type"
 
 export const getListProduct = (data) => ({
-    type: types.GET_LIST_PRODUCT
+    type: types.GET_LIST_PRODUCT,
+    payload: data
 })
 export const getListProductSuccess = (data) => ({
     type: types.GET_LIST_PRODUCT_SUCCESS,
