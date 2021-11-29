@@ -47,9 +47,10 @@ function Right() {
     }, [dispatch])
 
     const onsubmit = (id) => {
-    
-            dispatch(getListProduct({ id }))
+        setId(id)
+        dispatch(getListProduct({ id }))
     }
+
     return (
         <div className="wraper-right">
             <div className="wraper-address">
@@ -66,36 +67,35 @@ function Right() {
             <div>
                 {dataListProduct && dataListProduct.length > 0 ? dataListProduct.map((item, index) => (
                     <>
-                        {(index + 1) % 2 === 0 ? (<div className="info-address" key={index}>
-
-                            <div className="info-left">
-                                <div>{index + 1}</div>
-                            </div>
-                            <div className="img-news"><img src="/images/pexels-rachel-claire-4825701.jpg" /></div>
-                            <div className='content-address'>
-                                <h2>{item.title.rendered}</h2>
-                                <div>
-                                    {ReactHtmlParser(item.content.rendered)}
+                        {(index + 1) % 2 === 0 ? (
+                            <div className="info-address" key={index}>
+                                <div className="info-left">
+                                    <div>{index + 1}</div>
                                 </div>
-                                <Link to="/chi-tiet/1"><span>Đọc thêm <AiOutlineArrowRight /></span></Link>
-                            </div>
-                        </div>) : (<div className="info-address  info-address-2" key={index}>
-
-                            <div className="info-left">
-                                <div>{index + 1}</div>
-                            </div>
-                            {item.acf && item.acf !== undefined && item.acf !== null ? <div className="img-news img-new-2"><img src={`${item.acf.img1.url}`} /></div> : 0}
-
-                            <div className='content-address'>
-                                <h2>{item.title.rendered}</h2>
-                                <div>
-                                    {ReactHtmlParser(item.content.rendered)}
+                                <div className="img-news"><img src="/images/pexels-rachel-claire-4825701.jpg" /></div>
+                                <div className='content-address'>
+                                    <h2>{item.title.rendered}</h2>
+                                    <div>
+                                        {ReactHtmlParser(item.content.rendered)}
+                                    </div>
+                                    <Link to={`/chi-tiet/${item.slug}`}><span>Đọc thêm <AiOutlineArrowRight /></span></Link>
                                 </div>
-                                <Link to="/chi-tiet/1"><span>Đọc thêm <AiOutlineArrowRight /></span></Link>
-                            </div>
-                        </div>)}
+                            </div>) : (<div className="info-address  info-address-2" key={index} onClick={() => getSlug(item.slug)}>
+
+                                <div className="info-left">
+                                    <div>{index + 1}</div>
+                                </div>
+                                {item.acf && item.acf !== undefined && item.acf !== null ? <div className="img-news img-new-2"><img src={`${item.acf.img1.url}`} /></div> : 0}
+
+                                <div className='content-address'>
+                                    <h2>{item.title.rendered}</h2>
+                                    <div>
+                                        {ReactHtmlParser(item.content.rendered)}
+                                    </div>
+                                    <Link to={`/chi-tiet/${item.slug}`}><span>Đọc thêm <AiOutlineArrowRight /></span></Link>
+                                </div>
+                            </div>)}
                     </>
-
                 )) : (<>
                     <div className="info-address">
                         <div className="info-left">

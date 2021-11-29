@@ -2,6 +2,7 @@ import { all, call } from "redux-saga/effects";
 import { watchingGetBanner } from "./Banner/saga";
 import { xemdulieuBanner } from "./bannermng/saga";
 import { watchingGetListProduct } from "./ListProduct/saga";
+import { watchingGetNewsDetail } from "./NewsDetail/saga";
 
 
 
@@ -11,7 +12,8 @@ export default function* rootSaga() {
 
         call(watchingGetBanner),
         call(xemdulieuBanner),
-        call(watchingGetListProduct)
+        call(watchingGetListProduct),
+        call(watchingGetNewsDetail),
     ]);
 }
 

@@ -11,19 +11,19 @@ function Left() {
         },
         {
             id: 2,
-            title: 'Thanh Xuân'
+            title: 'Quán Acoustic'
         },
         {
             id: 3,
-            title: 'Cầu Giấy'
+            title: 'View Làm Việc'
         },
         {
             id: 1,
-            title: 'Tây Hồ'
+            title: 'Tổ Chức Sự Kiện'
         },
         {
             id: 5,
-            title: 'Hoàn Kiếm'
+            title: 'Gia Đình'
         },
     ])
     
@@ -32,7 +32,6 @@ function Left() {
     const onSubmit = (id) => {
 
         setId(id)
-        dispatch(getListProduct(id))
     
     }
     return (
