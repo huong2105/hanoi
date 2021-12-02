@@ -18,11 +18,11 @@ function Right() {
         },
         {
             id: 3,
-            title: "Cầu Giấy",
+            title: "Tổ Chức sự kiện",
         },
         {
             id: 2,
-            title: "Hồ Tây",
+            title: "Gia Đình",
         },
         {
             id: 5,
@@ -67,7 +67,7 @@ function Right() {
             <div>
                 {dataListProduct && dataListProduct.length > 0 ? dataListProduct.map((item, index) => (
                     <>
-                        {(index + 1) % 2 === 0 ? (
+                        {(index + 1) % 2 !== 0 ? (
                             <div className="info-address" key={index}>
                                 <div className="info-left">
                                     <div>{index + 1}</div>
@@ -80,7 +80,7 @@ function Right() {
                                     </div>
                                     <Link to={`/chi-tiet/${item.slug}`}><span>Đọc thêm <AiOutlineArrowRight /></span></Link>
                                 </div>
-                            </div>) : (<div className="info-address  info-address-2" key={index} onClick={() => getSlug(item.slug)}>
+                            </div>) : (<div className="info-address  info-address-2" key={index}>
 
                                 <div className="info-left">
                                     <div>{index + 1}</div>
